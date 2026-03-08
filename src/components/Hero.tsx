@@ -15,8 +15,7 @@ const Hero = () => {
               UI/UX Designer · Web Developer
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[0.95] tracking-tight text-foreground">
-              Dharshini
-              <span className="block text-gradient">A.</span>
+              Dharshini <span className="text-gradient">A.</span>
             </h1>
           </div>
           <p className="text-muted-foreground font-body text-lg max-w-md leading-relaxed">
