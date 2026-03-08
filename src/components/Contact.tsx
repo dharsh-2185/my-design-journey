@@ -13,9 +13,14 @@ const Contact = () => {
           I'm always open to new opportunities, collaborations, and conversations about design.
         </p>
         
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-4">
+          <a href="mailto:dharshinipersonal21@gmail.com" className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-body font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
+            <Mail size={18} /> dharshinipersonal21@gmail.com
+          </a>
+        </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
-          <a href="mailto:dharshini.se22@bitsathy.ac.in" className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-body font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
-            <Mail size={18} /> Send an Email
+          <a href="mailto:dharshini.se22@bitsathy.ac.in" className="border border-foreground/20 text-foreground px-8 py-4 rounded-full font-body font-medium hover:bg-foreground/5 transition-colors flex items-center gap-2">
+            <Mail size={18} /> dharshini.se22@bitsathy.ac.in
           </a>
           <a href="tel:+918248479419" className="border border-foreground/20 text-foreground px-8 py-4 rounded-full font-body font-medium hover:bg-foreground/5 transition-colors flex items-center gap-2">
             <Phone size={18} /> Call Me
