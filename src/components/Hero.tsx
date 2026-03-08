@@ -22,7 +22,10 @@ const Hero = () => {
           <p className="text-muted-foreground font-body text-lg max-w-md leading-relaxed">
             A curious and creative learner crafting intuitive digital experiences through thoughtful design solutions.
           </p>
-          <div className="flex flex-wrap gap-4 text-sm text-muted-foreground font-body">
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground font-body">
+            <a href="mailto:dharshinipersonal21@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Mail size={16} /> dharshinipersonal21@gmail.com
+            </a>
             <a href="mailto:dharshini.se22@bitsathy.ac.in" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail size={16} /> dharshini.se22@bitsathy.ac.in
             </a>
