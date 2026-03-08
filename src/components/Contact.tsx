@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Download } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
           I'm always open to new opportunities, collaborations, and conversations about design.
         </p>
         
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
           <a href="mailto:dharshini.se22@bitsathy.ac.in" className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-body font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
             <Mail size={18} /> Send an Email
           </a>
@@ -22,6 +22,10 @@ const Contact = () => {
           </a>
         </div>
 
+        <a href="/Dharshini_Resume.pdf" download className="inline-flex items-center gap-2 bg-foreground text-background px-8 py-4 rounded-full font-body font-medium hover:opacity-90 transition-opacity mb-16">
+          <Download size={18} /> Download Resume
+        </a>
+
         <div className="flex items-center justify-center gap-2 text-muted-foreground font-body text-sm">
           <MapPin size={16} />
           <span>Nerinjipettai, Erode, Tamil Nadu</span>
@@ -29,9 +33,8 @@ const Contact = () => {
       </div>
 
       {/* Footer */}
-      <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-border flex items-center justify-center">
         <p className="font-display text-xl font-bold text-foreground">Dharshini<span className="text-gradient"> A.</span></p>
-        <p className="text-muted-foreground font-body text-sm">© 2026 — Designed with ♥</p>
       </div>
     </section>
   );
