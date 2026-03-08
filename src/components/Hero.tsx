@@ -14,7 +14,7 @@ const Hero = () => {
             <p className="text-muted-foreground font-body text-sm tracking-[0.3em] uppercase">
               UI/UX Designer · Web Developer
             </p>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.95] tracking-tight text-foreground">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-[0.95] tracking-tight text-foreground">
               Dharshini
               <span className="block text-gradient">A.</span>
             </h1>
