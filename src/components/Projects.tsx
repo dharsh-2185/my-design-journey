@@ -1,4 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
+import projectTaskMgmt from "@/assets/project-task-mgmt.jpg";
+import projectAgriMarket from "@/assets/project-agri-market.jpg";
+import projectResqconnect from "@/assets/project-resqconnect.jpg";
 
 const projects = [
   {
@@ -7,6 +10,7 @@ const projects = [
     description: "Developed a web-based task management system with a clean and minimal interface. Improved user workflow with simple task creation, tracking, and responsive design.",
     tags: ["UI/UX Design", "Web Development", "Responsive"],
     event: "EVOGEN, Karunya University",
+    image: projectTaskMgmt,
   },
   {
     number: "02",
@@ -14,6 +18,7 @@ const projects = [
     description: "Designed a web platform connecting farmers directly with buyers. Created simple product browsing, clear navigation, and user-friendly interfaces suitable for rural and first-time digital users.",
     tags: ["UX Research", "Accessibility", "Web Platform"],
     event: "ZINNIA'24, GCE College",
+    image: projectAgriMarket,
   },
   {
     number: "03",
@@ -21,6 +26,7 @@ const projects = [
     description: "Designed a user-friendly emergency response mobile app that allows users to request help and volunteer during disasters. Focused on intuitive navigation, usability, and responsive mobile UI design.",
     tags: ["Mobile UI", "App Design", "Emergency UX"],
     event: "Mobile App Project",
+    image: projectResqconnect,
   },
 ];
 
@@ -33,34 +39,43 @@ const Projects = () => {
           Selected <span className="text-gradient">work</span>
         </h2>
         
-        <div className="space-y-8">
+        <div className="space-y-12">
           {projects.map((project) => (
             <div
               key={project.number}
-              className="group border border-border rounded-2xl p-8 md:p-12 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all duration-300"
+              className="group border border-border rounded-2xl overflow-hidden hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all duration-300"
             >
-              <div className="flex flex-col md:flex-row md:items-start gap-6">
-                <span className="text-5xl font-display font-bold text-primary/20 group-hover:text-primary/40 transition-colors">
-                  {project.number}
-                </span>
-                <div className="flex-1 space-y-4">
-                  <div className="flex items-start justify-between">
-                    <h3 className="text-2xl md:text-3xl font-display font-semibold text-foreground">
-                      {project.title}
-                    </h3>
-                    <ArrowUpRight size={24} className="text-muted-foreground group-hover:text-primary transition-colors shrink-0 mt-1" />
+              <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-muted">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-8 md:p-12">
+                <div className="flex flex-col md:flex-row md:items-start gap-6">
+                  <span className="text-5xl font-display font-bold text-primary/20 group-hover:text-primary/40 transition-colors">
+                    {project.number}
+                  </span>
+                  <div className="flex-1 space-y-4">
+                    <div className="flex items-start justify-between">
+                      <h3 className="text-2xl md:text-3xl font-display font-semibold text-foreground">
+                        {project.title}
+                      </h3>
+                      <ArrowUpRight size={24} className="text-muted-foreground group-hover:text-primary transition-colors shrink-0 mt-1" />
+                    </div>
+                    <p className="text-muted-foreground font-body leading-relaxed max-w-2xl">
+                      {project.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2 pt-2">
+                      {project.tags.map((tag) => (
+                        <span key={tag} className="bg-accent text-accent-foreground px-4 py-1.5 rounded-full font-body text-xs font-medium">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="text-xs text-muted-foreground font-body italic">{project.event}</p>
                   </div>
-                  <p className="text-muted-foreground font-body leading-relaxed max-w-2xl">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    {project.tags.map((tag) => (
-                      <span key={tag} className="bg-accent text-accent-foreground px-4 py-1.5 rounded-full font-body text-xs font-medium">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <p className="text-xs text-muted-foreground font-body italic">{project.event}</p>
                 </div>
               </div>
             </div>
