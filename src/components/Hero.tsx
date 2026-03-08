@@ -30,12 +30,12 @@ const Hero = () => {
               <Phone size={16} /> +91 8248479419
             </a>
           </div>
-          <div className="flex gap-4 pt-4">
+          <div className="flex flex-wrap gap-4 pt-4">
             <a href="#projects" className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-body font-medium hover:opacity-90 transition-opacity">
               View Projects
             </a>
-            <a href="#contact" className="border border-foreground/20 text-foreground px-8 py-3 rounded-full font-body font-medium hover:bg-foreground/5 transition-colors">
-              Get in Touch
+            <a href="/Dharshini_Resume.pdf" download className="border border-foreground/20 text-foreground px-8 py-3 rounded-full font-body font-medium hover:bg-foreground/5 transition-colors flex items-center gap-2">
+              <ArrowDown size={16} /> Download Resume
             </a>
           </div>
         </div>
